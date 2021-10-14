@@ -21,3 +21,11 @@ A pak normalni spusteni:
 ```powershell
 python -m main
 ```
+A to co jsem delal blbe je nahravani importu v ramci package. Ma to byt takhle:
+```python
+from .Main_window import Ui_MainWindow
+```
+a 
+```python
+from .spustit_okno import main
+```
