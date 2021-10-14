@@ -18,9 +18,9 @@ class Measurement_window(QMainWindow):
         self.ui.pushButton_2.clicked.connect(self.neblokovaci_funkce)
 
     def blokovaci_funkce(self):
-        # Ted to na 10 sekund zaseknu
+        # Ted to na 3 sekundy zaseknu
         self.ui.textEdit.append('Ted na 10 sekund zaseknu program')
-        time.sleep(10)
+        time.sleep(3)
         self.ui.textEdit.append('Program pokracuje')
 
     def neblokovaci_funkce(self): # nastavi a spusti workera, ktery nazablolokuje program
@@ -51,7 +51,7 @@ class worker(QtCore.QThread):
         self.freq = np.linspace(start, stop, points)
 
     def run(self):
-        time.sleep(10)
+        time.sleep(3)
         measurement = np.random.rand(self.freq.size)
         self.merena_data.emit(measurement)
 
