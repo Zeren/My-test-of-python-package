@@ -17,3 +17,7 @@ Stazeni z testovaciho pypi a stazeni dependencies z normalniho pypi
 ```powershell
 python -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ Ukazka-pyside2==1.0.6
 ```
+A pak normalni spusteni:
+```powershell
+python -m main
+```
