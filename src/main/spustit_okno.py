@@ -19,7 +19,7 @@ class Measurement_window(QMainWindow):
 
     def blokovaci_funkce(self):
         # Ted to na 3 sekundy zaseknu
-        self.ui.textEdit.append('Ted na 10 sekund zaseknu program')
+        self.ui.textEdit.append('Ted na 3 sekundy zaseknu program')
         time.sleep(3)
         self.ui.textEdit.append('Program pokracuje')
 
